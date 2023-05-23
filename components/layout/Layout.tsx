@@ -1,12 +1,14 @@
+import Footer from "./footer/Footer";
 import Meta from "./Meta";
 
 export default function Layout({ children, title, description, keywords }) {
-    return (
+	return (
 		<>
 			<Meta title={title} description={description} keywords={keywords} />
 			<main>
-                {children}
-            </main>
+				{children}
+			</main>
+			<Footer />
 		</>
 	)
 }

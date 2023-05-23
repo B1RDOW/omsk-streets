@@ -310,7 +310,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
-			<div className="container mx-auto p-6 grid grid-flow-row">
+			<div className="container mx-auto p-6 mb-10 grid grid-flow-row">
 				<h1 className="font-manrope text-3xl font-extrabold tracking-wide my-8">Улицы Омска</h1>
 				<section className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-8">
 					<StreetCard streetJSON={lenina} />

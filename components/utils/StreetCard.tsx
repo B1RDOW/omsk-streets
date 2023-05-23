@@ -6,7 +6,7 @@ import { Fragment, useState } from "react"
 export default function StreetCard({ streetJSON }) {
 	let [isOpen, setIsOpen] = useState(false)
 
-	const [page, setPage] = useState("person");
+	const [page, setPage] = useState("street");
 
 	function closeFirstModal() { setIsOpen(false) }
 	function openFirstModal() { setIsOpen(true) }
@@ -36,15 +36,15 @@ export default function StreetCard({ streetJSON }) {
 										<div className="relative z-30 h-fit max-h-screen pb-5 overflow-y-auto scrollbar-hide text-left transform shadow-xl transition-all rounded-2xl bg-white dark:bg-zinc-800 ring-1 ring-zinc-100 dark:ring-zinc-700/75">
 											<div className="sticky top-0 z-20 grid w-full grid-flow-col items-center justify-between gap-6 bg-white/75 px-4 py-4 text-lg backdrop-blur dark:bg-zinc-800/80">
 												<div className="grid grid-flow-col gap-4">
-													<button onClick={() => setPage("person")} type="button" className="grid grid-flow-col items-center w-full rounded-xl font-medium justify-start transition select-none p-3 gap-3 dark:text-zinc-100 text-zinc-900 hover:bg-zinc-200/70 dark:hover:bg-zinc-700/90 bg-zinc-200/50 dark:bg-zinc-700/40 ring-1 ring-inset ring-black/10 dark:ring-zinc-600/30 focus:outline-none">
-														<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true" className="h-5 w-5">
-															<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-														</svg><p className="text-base hidden sm:block">Биография</p>
-													</button>
 													<button onClick={() => setPage("street")} type="button" className="grid grid-flow-col items-center w-full rounded-xl font-medium justify-start transition select-none p-3 gap-3 dark:text-zinc-100 text-zinc-900 hover:bg-zinc-200/70 dark:hover:bg-zinc-700/90 bg-zinc-200/50 dark:bg-zinc-700/40 ring-1 ring-inset ring-black/10 dark:ring-zinc-600/30 focus:outline-none">
 														<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true" className="h-5 w-5">
 															<path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
 														</svg><p className="text-base hidden sm:block">История улицы</p>
+													</button>
+													<button onClick={() => setPage("person")} type="button" className="grid grid-flow-col items-center w-full rounded-xl font-medium justify-start transition select-none p-3 gap-3 dark:text-zinc-100 text-zinc-900 hover:bg-zinc-200/70 dark:hover:bg-zinc-700/90 bg-zinc-200/50 dark:bg-zinc-700/40 ring-1 ring-inset ring-black/10 dark:ring-zinc-600/30 focus:outline-none">
+														<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true" className="h-5 w-5">
+															<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+														</svg><p className="text-base hidden sm:block">Биография</p>
 													</button>
 													<button onClick={() => setPage("map")} type="button" className="grid grid-flow-col items-center w-full rounded-xl font-medium justify-start transition select-none p-3 gap-3 dark:text-zinc-100 text-zinc-900 hover:bg-zinc-200/70 dark:hover:bg-zinc-700/90 bg-zinc-200/50 dark:bg-zinc-700/40 ring-1 ring-inset ring-black/10 dark:ring-zinc-600/30 focus:outline-none">
 														<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" aria-hidden="true" className="h-5 w-5">
